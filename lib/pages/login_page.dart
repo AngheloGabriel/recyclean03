@@ -5,6 +5,7 @@ import 'package:recyclean_03/pages/login_state.dart';
 class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    print('Hola');
     return Scaffold(
       body: Center(
         child: RaisedButton(

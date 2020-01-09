@@ -15,13 +15,12 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
 
   PageController _controller;
-  int currentPage=DateTime.now().day-1;
+  int currentPage=DateTime.now().weekday-1;
   Stream<QuerySnapshot> _query;
 
   @override
   void initState() { 
     super.initState();
-
 
     _query=Firestore.instance
     .collection('rutaCompactador')
